@@ -1,38 +1,121 @@
-.App {
+.header-container {
+  color: #f0ffff;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: #36454f;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-input {
+  min-width: 5rem;
+  height: 2rem;
+  margin: 1rem 0 0;
+  border: none;
+  outline: none;
+  border-radius: 20px 0 0 20px;
+  padding: 13px;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pincode-container {
   display: flex;
-  flex-direction: column;
+  background-color: #282C35;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button {
+  border: none;
+  background: white;
+  height: 2rem;
+  padding: 0 10px 0 0;
+  border-radius: 0 20px 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-error {
+  padding: 0.5rem 0 2rem;
+  color: red;
+}
+
+.centers {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #faebd7;
+}
+
+.center-item {
+  border: #faebd7 solid 0.5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0.5rem;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.center-detail-table {
+  padding: 1rem;
+  width: 100%;
+}
+
+.center-detail-table thead {
+  background-color: #4b0082;
+}
+
+.center-detail-table thead tr th {
+  height: 3rem;
+}
+
+.center-detail-table tbody tr td {
+  height: 2rem;
+}
+
+tr:nth-child(even) {
+  background-color: darkslategray;
+}
+
+td {
+  font-size: 14px;
+}
+
+.center-name {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.available {
+  background-color: #32cd32;
+}
+.not-available {
+  background-color: #a81c07;
+}
+
+.center-section {
+  color: #f0ffff;
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .center-section {
+    font-size: 20px;
   }
 }
